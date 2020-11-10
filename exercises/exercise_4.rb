@@ -18,5 +18,5 @@ for men in @mens_stores.select(:id, :name, :annual_revenue)
 end
 
 pp Store.where(womens_apparel: true) && Store.where("annual_revenue < ?" , 1000000)
-                      #.where(annual_revenue < 1000000)
+                     
                   
