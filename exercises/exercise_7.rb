@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+@store_name = Store.create(name: "Asda").valid?
+pp @store_name
+
+@store = Store.create(name: "Burn")
+pp @store.errors.messages
